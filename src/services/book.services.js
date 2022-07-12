@@ -18,7 +18,7 @@ class BookDateService {
 
   updateBook = (id, updatedBook) => {
     const bookDoc = doc(db, "books", id);
-    return updateDoc(bookDoc, updateDoc);
+    return updateDoc(bookDoc, updatedBook);
   };
 
   deleteBook = (id) => {
